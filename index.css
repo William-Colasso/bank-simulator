@@ -1,7 +1,14 @@
 body{
     background-color: black;
+    text-align: center;
     color: aquamarine;
     justify-content: center;
     align-items: center;
     display: flex;
+}
+
+p:hover{
+    color: white;
+    text-decoration: underline;
+    size: 15px;
 }
