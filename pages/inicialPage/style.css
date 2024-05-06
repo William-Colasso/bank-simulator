@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    border: none;
+    margin: 0px;
+    padding: none;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --primary-color: #005779;
+    --bg-color: #F3F3F3;
+    --frames-color: white;
+    --text-color: #373737;
+    --text-opaque-color: #A2A2A2;
+    --screen-color: #373737;
+    --border-color: #C8C8C8; 
+}
+body{
+    background: var(--screen-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.screen{
+    width: 360px;
+    height: 100vh;
+    background: var(--bg-color);
+}
+header{
+    display: flex;
+    background: var(--primary-color);
+    padding: 36px 10px 0px 10px;
+    justify-content: space-between;
+    align-items: end;
+}
+header .username{
+    display: flex;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 12px;
+    align-items: center;
+}
+.saldo-box{
+    color: var(--text-opaque-color);
+    font-size: 15px;
+    padding: 24px 20px 8px 20px;
+    border-bottom: solid 0.5px var(--border-color)
+}
+.saldo-box .saldo{
+    color: var(--text-color);
+    font-weight: bold;
+    font-size: 24px;
+}
+main{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+}
+main section{
+    background-color: #005779;
+}
