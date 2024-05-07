@@ -15,6 +15,7 @@
     --text-opaque-color: #A2A2A2;
     --screen-color: #373737;
     --border-color: #C8C8C8; 
+    --nav-color: #fafafa;
 }
 body{
     background: var(--screen-color);
@@ -52,12 +53,41 @@ header .username{
     font-weight: bold;
     font-size: 24px;
 }
-main{
+main.botoes{
     display: grid;
-    padding: 20px;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    /*padding: 20px;*/
+    grid-template-columns: repeat(2, 0fr);
+    grid-template-rows: repeat(3, 0fr);
 }
+
 main section{
-    background-color: #005779;
+    background-color: var(--frames-color);
+    width: 150px;
+    height: 100px;
+    margin: 20px 0px 0px 20px;
+    border: solid 0.5px var(--border-color);
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+main.pix section{
+    width: 320px;
+    height: 90px;
+}
+
+nav{
+    background-color: var(--nav-color);
+    height: 80px;
+    width: 360px;
+    margin-top: 20px;
+    display: grid;
+    
+    grid-template-columns: repeat(5, 0fr);
+    grid-template-rows: repeat(1, 0fr);
+}
+
+nav section{
+    margin: 20px;
 }
