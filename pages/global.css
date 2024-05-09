@@ -21,15 +21,18 @@
 body{
     background: var(--screen-color);
     display: flex;
+    height: 100vh;
+    border: 1px solid red;
     justify-content: center;
     user-select: none;
     -webkit-user-select: none;
 }
-.screen{
+body .screen{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     width: 360px;
-    height: 100vh;
+    height: 100%;
     background: var(--bg-color);
 }
 header{
@@ -76,7 +79,7 @@ main a:hover{
 main a .material-symbols-outlined{
     position: absolute;
     right: 10px;
-    align-self: baseline;
+    top: 10px;
     font-size: 32px;
     font-weight: 100;
     color: var(--text-opaque-color);
