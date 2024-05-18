@@ -1,0 +1,83 @@
+/* Estilos para a página de Pix */
+
+.screen {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: var(--header-background-color);
+    border-bottom: solid 0.5px var(--border-color);
+}
+
+header div {
+    display: flex;
+    align-items: center;
+}
+
+header p {
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+header a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+main.botoes {
+    display: grid;
+    padding: 20px;
+    flex: auto;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-gap: 10px;
+}
+
+main a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: var(--button-background-color);
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 16px;
+    font-weight: bold;
+}
+
+main a span.material-symbols-outlined {
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: var(--nav-background-color);
+    border-top: solid 0.5px var(--border-color);
+}
+
+nav a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 12px;
+}
+
+nav a .material-symbols-outlined {
+    font-size: 24px;
+}
+
+nav a .text {
+    margin-top: 4px;
+    font-size: 10px;
+}
