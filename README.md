@@ -1,4 +1,4 @@
-# 🏦 bank-simulator
+# 🏦 Simulador Bancário - Ailos
 
 Desenvolvimento de um Simulador da Cooperativa Ailos, com ações lúcidas de transferências bancárias, PIX, e mais!
 
