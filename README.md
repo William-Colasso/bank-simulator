@@ -1,6 +1,6 @@
 # 🏦 bank-simulator
 
-Desenvolvimento de um simulador de Banco, com ações lúcidas de transferências bancárias, PIX, e mais!
+Desenvolvimento de um Simulador da Cooperativa Ailos, com ações lúcidas de transferências bancárias, PIX, e mais!
 
 ## 📋 Funcionalidades
 
@@ -8,8 +8,8 @@ Desenvolvimento de um simulador de Banco, com ações lúcidas de transferência
 - ⚡ **PIX:** Realize transferências instantâneas utilizando o sistema de pagamento instantâneo.
 - 📊 **Histórico de Transações:** Acompanhe todas as suas transações com um histórico detalhado.
 
-## 👥 Colaboradores 
-- @gabrielpiske
-- @luquinhaixx
-- @JulioBusarello
-- @brunobusarello
+## Colaboradores
+- <a href="https://github.com/gabrielpiske">gabrielpiske</a>
+- <a href="https://github.com/luquinhaixx">luquinhaixx</a>
+- <a href="https://github.com/JulioBusarello">JulioBusarello</a>
+- <a href="https://github.com/brunobusarello">brunobusarello</a>
