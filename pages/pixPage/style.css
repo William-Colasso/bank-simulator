@@ -22,7 +22,7 @@ header div {
 header p {
     margin-left: 10px;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 header a {
@@ -62,6 +62,10 @@ nav {
     padding: 10px;
     background-color: var(--nav-background-color);
     border-top: solid 0.5px var(--border-color);
+}
+
+a.button10 span.material-symbols-outlined{
+    transform: rotate(45deg);
 }
 
 nav a {
