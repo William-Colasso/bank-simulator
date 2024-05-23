@@ -1,39 +1,31 @@
-.screen {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-}
-
-.botoes {
+.btns {
     display: grid;
     padding: 10px;
-    flex: auto;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
     grid-gap: 5px;
     font-weight: normal;
+    grid-template-columns: repeat(4, 1fr);
+    min-height: 130px;
+    line-height: 500px;
 }
-
+main {
+    height: 100vh;
+}
 a.button1{
     color: white;
     background-color: var(--primary-color);
 }
-
 main.botoes span.material-symbols-outlined{
     color: var(--primary-color);
 }
-
 a.button1 span.material-symbols-outlined{
     left: 10%;
     transform: translateX(-50%);
     transform: rotate(45deg);
     color: white;
 }
-
 header a{
     text-decoration: none;
 }
-
 span{
     text-align: center;
     font-weight: normal;
@@ -42,45 +34,43 @@ span{
     justify-content: center;
     font-size: 13px;
 }
-a span.material-symbols-outlined{
-    top: 90%;
-    position: absolute;
-
+hr{
+    background-color: var(--border-color);
 }
-
 span.material-symbols-outlined{
     left: 50%;
     transform: translateX(-50%);
 }
-
 p.txt{
+    padding: 10px;
     color: var(--text-dark-color);
     font-weight: 500;
-    position: absolute;
-    top: 28%;
     font-size: 12px;
 }
-
-div.divisor{
-    left: 15%;
-    width: 360px;
-    height: 165px;
-    position: absolute;
-    border-bottom: solid 0.5px var(--border-color);
-}
-
-.botoes2 {
+div.chave{
     display: grid;
-    padding: 10px;
-    flex: auto;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(8, 1fr);
+    padding: 5px;
     grid-gap: 5px;
-    font-weight: 100px;
+    grid-template-columns: repeat(4, 1fr);
+    text-wrap: nowrap;
 }
-
-main.botoes2 a{
-    top: 60%;
-    width: 100%;
-    height: 60%;
+.chave .radio-button input[type="radio"]{
+    position: absolute;
+    /*opacity: 0;*/
+    pointer-events: none;
+}
+.chave .radio-button span{
+    display: flex;
+    padding: 6px;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 5px;
+    border: 0.5px solid var(--border-color);
+    cursor: pointer;
+}
+.radio-button input[type="radio"]:checked + span{
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
 }

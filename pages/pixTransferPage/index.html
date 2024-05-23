@@ -13,7 +13,7 @@
 <body>
     <div class="screen">
         <header>
-            <div>
+            <div class="cabeca">
                 <a href="../pixPage/index.html">
                     <span class="material-symbols-outlined">
                         arrow_left_alt
@@ -22,7 +22,8 @@
                 <p>Transferir com Pix</p>
             </div>
         </header>
-            <main class="botoes">
+        <main>
+            <div class="btns">
                 <a class="button1">
                     <span>Chave <br> Pix</span>
                     <span class="material-symbols-outlined">
@@ -46,25 +47,31 @@
                     <span class="material-symbols-outlined">
                         book_2
                     </span>
-                </a> 
-            <p class="txt">TIPO DE CHAVE</p>
-            <div class="divisor"></div>
-            </main>
-            
-            <main class="botoes2">
-                <a class="button5">
-                    <p>CPF/CNPJ</p>
                 </a>
-                <a class="button6">
-                    <p>Celular</p>
-                </a>
-                <a class="button7">
-                    <p>E-mail</p>
-                </a>
-                <a class="button8">
-                    <p>Chave aleatória</p>
-                </a> 
-            </main>
+            </div>
+            <div class="content">
+                <p class="txt">TIPO DE CHAVE</p>
+                <hr size="3px">
+            </div>
+            <div class="chave">
+                <div class="radio-button">
+                    <input type="radio" name="chaves" id="chave1" checked>
+                    <span>CPF/CNPJ</span>
+                </div>
+                <div class="radio-button">
+                    <input type="radio" name="chaves" id="chave2">
+                    <span>Celular</span>
+                </div>
+                <div class="radio-button">
+                    <input type="radio" name="chaves" id="chave3">
+                    <span>E-mail</span>
+                </div>
+                <div class="radio-button">
+                    <input type="radio" name="chaves" id="chave4">
+                    <span>Chave Aleatória</span>
+                </div>
+            </div>
+        </main>  
     </div>
 </body>
 </html>
