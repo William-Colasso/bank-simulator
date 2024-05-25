@@ -56,20 +56,33 @@
             <div class="chave">
                 <div class="radio-button">
                     <input type="radio" name="chaves" id="chave1" checked>
-                    <label class="btn" for="chave1">CPF/CNPJ</label>
-                    <!--<span>CPF/CNPJ</span>-->
+                    <label class="btn" for="chave1" onclick="cpf()">CPF/CNPJ</label>
+                    <div class="cpf" id="cpf">
+                        <p>INFORME O CPF/CNPJ DO DESTINATÁRIO</p><br>
+                        <input name="chavecpf" type="text">
+                        <label for="chavecpf">CPF/CNPJ</label>
+                    </div>
                 </div>
                 <div class="radio-button">
                     <input type="radio" name="chaves" id="chave2">
-                    <label class="btn" for="chave2">Celular</span>
+                    <label class="btn" for="chave2" onclick="celular()">Celular</label>
+                    <div class="celular" id="celular" style="opacity: 0%;">
+                        <p>2</p>
+                    </div>
                 </div>
                 <div class="radio-button">
                     <input type="radio" name="chaves" id="chave3">
-                    <label class="btn" for="chave3">E-mail</span>
+                    <label class="btn" for="chave3" onclick="email()">E-mail</label>
+                    <div id="email" style="opacity: 0%;">
+                        <p>3</p>
+                    </div>
                 </div>
                 <div class="radio-button">
                     <input type="radio" name="chaves" id="chave4">
-                    <label class="btn" for="chave4">Chave Aleatória</span>
+                    <label class="btn" for="chave4" onclick="randomkey()">Chave Aleatória</label>
+                    <div id="randomkey" style="opacity: 0%;">
+                        <p>4</p>
+                    </div>
                 </div>
             </div>
         </main>  

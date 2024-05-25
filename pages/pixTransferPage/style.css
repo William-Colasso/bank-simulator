@@ -46,7 +46,7 @@ p.txt{
     padding: 10px;
     color: var(--text-dark-color);
     font-weight: 500;
-    font-size: 12px;
+    font-size: 13px;
 }
 div.chave{
     display: grid;
@@ -60,7 +60,7 @@ div.chave{
     opacity: 0;
     pointer-events: none;
 }
-.chave .radio-button label{
+.chave .radio-button label.btn{
     display: flex;
     padding: 6px;
     align-items: center;
@@ -69,9 +69,26 @@ div.chave{
     border-radius: 5px;
     border: 0.5px solid var(--border-color);
     cursor: pointer;
+    font-weight: 520;
 }
 .radio-button input[type="radio"]:checked + label{
     background-color: var(--primary-color);
     color: white;
     border: var(--primary-color);
+    font-weight: 400;
+}
+div.cpf p{
+    padding: 5px;
+    color: var(--text-dark-color);
+    font-weight: 400;
+    font-size: 14px;
+    position: absolute;
+    display: flex;
+}
+div.cpf label,input{
+    position: absolute;
+    display: flex;
+    padding: 4px;
+    font-size: 17px;
+    width: 100;;
 }
