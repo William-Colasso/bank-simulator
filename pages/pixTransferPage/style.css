@@ -77,7 +77,7 @@ div.chave{
     border: var(--primary-color);
     font-weight: 400;
 }
-div.cpf p{
+div.inputs p{
     padding: 5px;
     color: var(--text-dark-color);
     font-weight: 400;
@@ -85,7 +85,7 @@ div.cpf p{
     position: absolute;
     display: flex;
 }
-div.cpf label,input{
+div.inputs label,input{
     position: absolute;
     display: flex;
     padding: 4px;
