@@ -109,3 +109,7 @@ div.campoTxt input {
     float: right;
     width: 264px;
 }
+
+p.textInput{
+    padding-left: 10px;
+}
