@@ -77,18 +77,35 @@ div.chave{
     border: var(--primary-color);
     font-weight: 400;
 }
-div.inputs p{
-    padding: 5px;
-    color: var(--text-dark-color);
+div.inputs > div > p{
+    padding: 10px;
+    color: var(--text-opaque-color);
     font-weight: 400;
     font-size: 14px;
     position: absolute;
     display: flex;
 }
-div.inputs label,input{
+div.inputs label{
     position: absolute;
     display: flex;
     padding: 4px;
     font-size: 17px;
     width: 100;;
+}
+div.campoTxt {
+    width: 360px;
+    height: 44px;
+    background-color: white;
+}
+
+div.campoTxt p, input{
+    margin-right: 0vw;
+    display: inline-block;
+    color: black;
+    margin-top: 12px;
+}
+
+div.campoTxt input {
+    float: right;
+    width: 264px;
 }
