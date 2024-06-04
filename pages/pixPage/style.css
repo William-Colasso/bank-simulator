@@ -20,14 +20,7 @@ header div {
 }
 
 header p {
-    margin-left: 10px;
-    font-size: 18px;
     font-weight: normal;
-}
-
-header a {
-    color: var(--text-color);
-    text-decoration: none;
 }
 
 main.botoes {

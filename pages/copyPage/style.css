@@ -1,0 +1,24 @@
+.padding-area{
+    padding: 20px;
+}
+.padding-area h1{
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--text-dark-color);
+}
+.padding-area p{
+    font-size: 12px;
+    color: var(--text-dark-color);
+}
+.copy-area{
+    background-color: var(--frames-color);
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    height: 118px;
+    width: 100%;
+    border-top: 0.5px solid var(--border-color);
+    border-bottom: 0.5px solid var(--border-color);
+    font-size: 14px;
+    color: var(--text-dark-color);
+}
