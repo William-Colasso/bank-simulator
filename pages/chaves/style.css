@@ -1,0 +1,24 @@
+a.filter span{
+    display: flex;
+    padding-left: 130px;
+    color: white;
+}
+main.buttons a{
+    display: flex;
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 300;
+    justify-content: center;
+    align-items: center;
+    padding: 12px;
+    padding-inline: 100px;
+    flex: auto;
+    position: absolute;
+    bottom: 10px;
+    cursor: pointer;
+}
+main.buttons{
+    padding: 15px;
+    width: auto;
+    box-sizing: border-box;
+}
