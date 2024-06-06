@@ -1,14 +1,13 @@
-const copyArea = document.querySelector(".copy-area");
-const loading = document.querySelector(".loading");
+const copyArea = document.getElementById("copyArea");
 const text = document.querySelector(".copy-text");
+var canIPaste = true
 
-function click(){
-    copyArea.addEventListener("click", (e) => {
-        if(e.)
-        loading.style.width++
-        loading.style.height++
-    });
-    click();
+async function paste() {
+    if (canIPaste) {
+        canIPaste = false
+        const copiedText = await navigator.clipboard.readText()
+        text.innerHTML = copiedText;
+    }
 }
 
-click()
+copyArea.addEventListener("click", paste);
