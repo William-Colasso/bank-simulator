@@ -116,6 +116,7 @@ div.campoTxt p, input{
 div.campoTxt input {
     outline: none;
     flex: auto;
+    text-align: right;
 }
 
 p.textInput{
