@@ -1,13 +1,25 @@
-const copyArea = document.getElementById("copyArea");
+const copyArea = document.querySelector(".copy-area");
 const text = document.querySelector(".copy-text");
-var canIPaste = true
+const loading = document.querySelector(".loading");
+var clicking = true;
+var ola = 2 + 2;
 
 async function paste() {
-    if (canIPaste) {
-        canIPaste = false
-        const copiedText = await navigator.clipboard.readText()
-        text.innerHTML = copiedText;
-    }
-}
+    const copiedText = await navigator.clipboard.readText()
+    text.innerHTML = copiedText;
+} 
 
-copyArea.addEventListener("click", paste);
+copyArea.addEventListener("mousedown", (event) => {
+    clicking = true
+    console.log("Mousedown");
+    while (clicking) {
+        copyArea.addEventListener("mouseup", (event) => {
+            clicking = false
+            console.log("Mouseup");
+        });
+    }
+});
+
+
+
+
