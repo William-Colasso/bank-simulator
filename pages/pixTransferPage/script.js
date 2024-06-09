@@ -24,3 +24,47 @@ function typeInput(caller){
         $("#randomkey").attr("style", "display: flex");
     }
 }
+
+function mascara(i){
+    var v = i.value;
+
+    if(isNaN(v[v.length-1])){
+        i.value = v.substring(0, v.length-1);
+        return;
+     }
+     
+    if(v.length <= 14){
+        i.setAttribute("maxlength", "18");
+        v = v.replace(".", "");
+        v = v.replace(".", "");
+        v = v.replace("/", "");
+        v = v.replace("-", "");
+        if (v.length == 3){
+            p1 = v.substring(0, 3);
+            i.value = p1 + ".";
+        }
+        if (v.length == 7){
+            p1 = v.substring(0, 7);
+            i.value = p1 + ".";
+        }
+        if (v.length == 11){
+            p1 = v.substring(0, 11);
+            i.value = p1 + "-";
+        } 
+    }
+    else if(v.length < 17){
+        v = v.replace(".", "");
+        v = v.replace(".", "");
+        v = v.replace(".", "");
+        v = v.replace("-", "");
+
+        p1 = v.substring(0, 2);
+        p2 = v.substring(2, 5);
+        p3 = v.substring(5, 8);
+        p4 = v.substring(8, 12);
+
+        i.value = p1 + "." + p2 + "." + p3 + "/" + p4 + "-";
+
+        console.log(v);
+    }
+}
