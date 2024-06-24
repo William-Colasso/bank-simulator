@@ -70,10 +70,12 @@ main a{
     transition-duration: 0.2s;
     text-decoration: none;
 }
+/* CSS Cadastrar*/
 main a:hover{
     transform: scale(1.05);
+    color: white;
+    background-color: var(--primary-color);
 }
-/* CSS Cadastrar*/
 a.info{
     color: white;
     padding-left: 110px;
@@ -92,11 +94,9 @@ main.buttons .button{
     gap: 10px;
     height: 65px;
 }
-
 main.buttons .keyb span.material-symbols-outlined{
     transform: rotate(45deg);
 }
-
 main.buttons span.material-symbols-outlined{
     position: block;
     font-size: 40px;
