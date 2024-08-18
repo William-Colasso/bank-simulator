@@ -70,10 +70,12 @@ main a{
     transition-duration: 0.2s;
     text-decoration: none;
 }
+/* CSS Cadastrar*/
 main a:hover{
     transform: scale(1.05);
+    color: white;
+    background-color: var(--primary-color);
 }
-/* CSS Cadastrar*/
 a.info{
     color: white;
     padding-left: 110px;
@@ -83,12 +85,21 @@ main.buttons {
     padding: 20px;
     flex: auto;
     grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 65px);
     grid-gap: 15px;
+}
+main.buttons .button{
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    height: 65px;
+}
+main.buttons .keyb span.material-symbols-outlined{
+    transform: rotate(45deg);
 }
 main.buttons span.material-symbols-outlined{
     position: block;
-    font-size: 32px;
+    font-size: 40px;
     font-weight: 200;
     color: var(--primary-color);
 }

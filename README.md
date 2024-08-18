@@ -10,6 +10,6 @@ Desenvolvimento de um Simulador da Cooperativa Ailos, com ações lúcidas de tr
 
 ## Colaboradores
 - <a href="https://github.com/gabrielpiske">gabrielpiske</a>
-- <a href="https://github.com/luquinhaixx">luquinhaixx</a>
+- <a href="https://github.com/lucas-g-silva">lucas-g-silva</a>
 - <a href="https://github.com/JulioBusarello">JulioBusarello</a>
 - <a href="https://github.com/brunobusarello">brunobusarello</a>
