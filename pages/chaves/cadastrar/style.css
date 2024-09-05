@@ -3,6 +3,7 @@
 
 :root{
     --primary-color: #005779;
+    --deselect-color: #66aeca;
     --bg-color: #F3F3F3;
     --frames-color: white;
     --text-color: #373737;
@@ -11,6 +12,7 @@
     --screen-color: #373737;
     --border-color: #C8C8C8; 
 }
+
 *{
     border: none;
     margin: 0px;
@@ -18,6 +20,7 @@
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
+
 body{
     background: var(--screen-color);
     display: flex;
@@ -26,6 +29,7 @@ body{
     user-select: none;
     -webkit-user-select: none;
 }
+
 body .screen{
     display: flex;
     flex-direction: column;
@@ -33,6 +37,7 @@ body .screen{
     height: 100%;
     background: var(--bg-color);
 }
+
 header{
     display: flex;
     background: var(--primary-color);
@@ -40,12 +45,14 @@ header{
     align-items: end;
     color: var(--bg-color);
 }
+
 header div{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 20px;
 }
+
 header a{
     display: flex;
     align-items: center;
@@ -70,16 +77,13 @@ main a{
     transition-duration: 0.2s;
     text-decoration: none;
 }
+
 /* CSS Cadastrar*/
-main a:hover{
-    transform: scale(1.05);
-    color: white;
-    background-color: var(--primary-color);
-}
 a.info{
     color: white;
     padding-left: 110px;
 }
+
 main.buttons {
     display: grid;
     padding: 20px;
@@ -88,25 +92,75 @@ main.buttons {
     grid-template-rows: repeat(4, 65px);
     grid-gap: 15px;
 }
+
 main.buttons .button{
     align-items: center;
     justify-content: flex-start;
     gap: 10px;
     height: 65px;
 }
+
 main.buttons .keyb span.material-symbols-outlined{
     transform: rotate(45deg);
 }
+
 main.buttons span.material-symbols-outlined{
     position: block;
     font-size: 40px;
     font-weight: 200;
-    color: var(--primary-color);
 }
+
 span.ref{
     padding-left: 20px;
     font-size: large;
     color: var(--text-color);
     padding-top: 30px;
     font-weight: 600;
+}
+
+a.confirmar{
+    background-color: var(--deselect-color);
+    border: solid 0.5px var(--border-color);
+    color: white;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 400;
+    justify-content: center;
+    position: absolute;
+    bottom: 10px;
+    width: auto;
+    padding: 10px;
+    padding-inline: 116px;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.button:hover{
+    cursor: pointer;
+}
+
+.button.selected {
+    background-color: var(--primary-color);
+    color: white;
+    transform: scale(1.05);
+}
+
+.confirmar.active {
+    background-color: var(--primary-color);
+    color: white;
+    border-color: var(--primary-color);
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.button .description {
+    display: none;
+    font-size: 12px;
+    color: var(--text-dark-color);
+    margin-top: 5px;
+    padding: 0 10px;
+}
+
+.button.selected .description {
+    display: block;
 }
